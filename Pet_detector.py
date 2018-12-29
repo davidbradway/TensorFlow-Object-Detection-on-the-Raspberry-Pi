@@ -161,7 +161,7 @@ def pet_detector(frame):
         [detection_boxes, detection_scores, detection_classes, num_detections],
         feed_dict={image_tensor: frame_expanded})
 
-    # Draw the results of the detection (aka 'visulaize the results')
+    # Draw the results of the detection (aka 'visualize the results')
     vis_util.visualize_boxes_and_labels_on_image_array(
         frame,
         np.squeeze(boxes),
